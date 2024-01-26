@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+/* VARIABLES */
+:root {
+  /* Colors */
+  --nutmeg: hsl(14, 45%, 36%);
+  --dark-raspberry: hsl(332, 51%, 32%);
+  --white: hsl(0, 0%, 100%);
+  --rose-white: hsl(330, 100%, 98%);
+  --eggshell: hsl(30, 54%, 90%);
+  --light-grey: hsl(30, 18%, 87%);
+  --wenge-brown: hsl(30, 10%, 34%);
+  --dark-charcoal: hsl(24, 5%, 18%);
+
+  /* Fonts */
+  --font-family-young: "Young Serif", serif;
+  --font-family-Outfit: "Outfit", sans-serif;
+  --font-wght-700: 700;
+  --font-wght-600: 600;
+  --font-wght-400: 400;
+}
+
+/* GENERAL CSS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: var(--font-family-Outfit);
+  background-color: var(--eggshell);
+}
+
+.recipe-page-main {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  padding: 2.4rem;
+  margin: 5rem 0;
+  width: 54rem;
+  border-radius: 0.8rem;
+  background-color: var(--white);
+}
+
+.food-img {
+  width: 100%;
+  border-radius: 0.6rem;
+}
+
+.preparation {
+  border-radius: 0.6rem;
+  padding: 1rem 2rem;
+  margin: 2rem 0 0 0;
+  background-color: var(--rose-white);
+}
+
+.preparation span {
+  font-size: 1.5rem;
+  color: var(--dark-raspberry);
+}
+
+h1 {
+  padding: 1.5rem 0;
+  font-size: 2.8rem;
+  color: var(--dark-charcoal);
+  font-family: var(--font-family-young);
+}
+
+.heading {
+  padding-top: 1.5rem;
+  font-family: var(--font-family-young);
+}
+
+.heading,
+th {
+  color: var(--nutmeg);
+}
+
+.custom-ul {
+  border-bottom: 1px solid var(--light-grey);
+}
+
+td,
+p {
+  font-size: 1.1rem;
+  line-height: 2rem;
+  color: var(--wenge-brown);
+  font-weight: var(--font-wght-400);
+}
+
+ul {
+  padding: 1rem 1.3rem;
+}
+
+ol {
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--light-grey);
+}
+
+ol li,
+ul li {
+  line-height: 2rem;
+  font-size: 1.1rem;
+  color: var(--wenge-brown);
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  padding-left: 2.5rem;
+}
+
+th {
+  padding-right: 14rem;
+}
+
+th,
+td {
+  line-height: 3rem;
+  border-bottom: 1px solid var(--light-grey);
+}
+
+@media (max-width: 475px) {
+  .container {
+    padding: 0rem;
+    margin: 0rem 0;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .food-img {
+    border-radius: 0;
+  }
+
+  .recipes {
+    padding: 1.5rem;
+  }
+
+  .preparation {
+    padding: 1rem;
+  }
+
+  h1 {
+    padding: 0.8rem 0;
+    font-size: 2.4rem;
+  }
+
+  th {
+    padding-right: 5rem;
+  }
+}
